@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  drupal:
+    build: ./docker
+    links:
+    - mysql
+    ports:
+    - 8888:80
+    volumes:
+    - ./drupal:/var/www/html
+    - ./config/settings.php:/var/www/html/sites/default/settings.php
+    - ./docker/entrypoint:/docker-entrypoint.d
+  mysql:
+    image: mysql
+    environment:
+    - MYSQL_DATABASE=drupal
+    - MYSQL_USER=drupal
+    - MYSQL_PASSWORD=drupal
+    - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    volumes:
+    - ./config/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    ports:
+    - 3360:3306
