@@ -15,3 +15,8 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_biQUc5rZMtfMxKP0Qu2CW0AhFsc2GiGcsESAhRW7kBZWsAAtyRh7cWCgc2xNJwYHyIroC7o7hg/sync';
+
+$scheme = isset($_SERVER['REQUEST_SCHEME']) ? $_SERVER['REQUEST_SCHEME'] : 'http';
+$settings['file_public_base_url'] = $scheme . '://' . $_SERVER['SERVER_NAME'] . ':9999';
+$settings['file_public_path'] = '/files/domain.fr/public';
+$settings['file_private_path'] = '/files/domain.fr/private';

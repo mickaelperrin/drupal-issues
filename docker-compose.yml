@@ -11,6 +11,7 @@ services:
     - ./drupal:/var/www/html
     - ./config/settings.php:/var/www/html/sites/default/settings.php
     - ./docker/entrypoint:/docker-entrypoint.d
+    - ./config/files:/files
   mysql:
     image: mysql
     environment:
@@ -22,3 +23,11 @@ services:
     - ./config/dump.sql:/docker-entrypoint-initdb.d/dump.sql
     ports:
     - 3360:3306
+  nginx:
+    image: nginx
+    ports:
+    - 9999:80
+    volumes_from:
+    - drupal
+    volumes:
+    - ./config/vhost.conf:/etc/nginx/conf.d/default.conf
