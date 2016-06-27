@@ -1,0 +1,11 @@
+uuid: e14fbd0e-e4cf-40ab-916f-77c0815f9239
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4w1vDIuPlVqNIiynysHZHU-9sBCpx5uiEIPlo4SW1tw
+id: personal
+label: 'Formulaire de contact personnel'
+recipients: {  }
+reply: ''
+weight: 0

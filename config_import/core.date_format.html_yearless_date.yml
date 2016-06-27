@@ -1,0 +1,10 @@
+uuid: 3d1f3a2c-904f-423d-8b68-fa147b10bbaf
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5VpawMrKPEPCkoO4YpPa0TDFO2dgiIHfTziJtwlmUxc
+id: html_yearless_date
+label: 'Date sans année HTML'
+locked: true
+pattern: m-d

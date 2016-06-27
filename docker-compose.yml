@@ -11,6 +11,8 @@ services:
     - ./drupal:/var/www/html
     - ./config/settings.php:/var/www/html/sites/default/settings.php
     - ./docker/entrypoint:/docker-entrypoint.d
+    - ./config_import:/config
+
   mysql:
     image: mysql
     environment:
