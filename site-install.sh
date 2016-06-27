@@ -9,7 +9,8 @@ DRUSH="docker exec -u www-data ${DIRNAME_SANITISED}_drupal_1 /var/www/html/vendo
 cd $DIR
 docker-compose build
 docker-compose up -d
-sleep 3
+docker exec ${DIRNAME_SANITISED}_drupal_1 composer --working-dir=/var/www/html -vvv update
+sleep 5
 docker exec ${DIRNAME_SANITISED}_drupal_1 /wait-composer.sh
 
 echo "Trying to install drupal with config_installer"
