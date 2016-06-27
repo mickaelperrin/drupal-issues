@@ -8,6 +8,7 @@ services:
     ports:
     - 8888:80
     volumes:
+    #- ~/.composer/cache:/composer/cache
     - ./drupal:/var/www/html
     - ./config/settings.php:/var/www/html/sites/default/settings.php
     - ./docker/entrypoint:/docker-entrypoint.d
