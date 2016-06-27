@@ -13,5 +13,5 @@ $databases['default']['default'] = array (
     'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
     'driver' => 'mysql',
 );
-$settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_biQUc5rZMtfMxKP0Qu2CW0AhFsc2GiGcsESAhRW7kBZWsAAtyRh7cWCgc2xNJwYHyIroC7o7hg/sync';
+$settings['install_profile'] = 'config_installer';
+$config_directories['sync'] = '/config';
