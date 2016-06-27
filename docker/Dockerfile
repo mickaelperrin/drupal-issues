@@ -19,5 +19,8 @@ RUN mkdir -p /docker-entrypoint.d \
 COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 
+COPY wait-composer.sh /
+RUN chmod +x /wait-composer.sh
+
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["apache2-foreground"]
