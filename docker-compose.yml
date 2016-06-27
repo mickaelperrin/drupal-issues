@@ -13,7 +13,6 @@ services:
     - ./docker/entrypoint:/docker-entrypoint.d
     - ./config/composer.json:/var/www/html/composer.json
     - ./config_import:/config
-
   mysql:
     image: mysql
     environment:
@@ -21,7 +20,5 @@ services:
     - MYSQL_USER=drupal
     - MYSQL_PASSWORD=drupal
     - MYSQL_ALLOW_EMPTY_PASSWORD=true
-    volumes:
-    - ./config/dump.sql:/docker-entrypoint-initdb.d/dump.sql
     ports:
     - 3360:3306
