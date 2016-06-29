@@ -2,3 +2,6 @@
 	path = drupal
 	url = https://git.drupal.org/project/drupal.git
 	branch = 8.2.x
+[submodule "config_installer"]
+	path = config_installer
+	url = git://git.drupal.org/project/config_installer.git
