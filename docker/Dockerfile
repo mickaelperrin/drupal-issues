@@ -2,7 +2,7 @@ FROM drupal:8
 
 # Git for patch
 RUN apt-get update \
- && apt-get install -y git
+ && apt-get install -y git mysql-client
 
 # Composer to get up-to-date vendor libraries
 ENV COMPOSER_HOME /composer
