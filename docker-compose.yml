@@ -6,7 +6,7 @@ services:
     links:
     - mysql
     ports:
-    - "127.0.0.1::80"
+    - "0.0.0.0::80"
     volumes:
     #- ~/.composer/cache:/composer/cache
     - ./drupal:/var/www/html
@@ -23,4 +23,4 @@ services:
     - MYSQL_PASSWORD=drupal
     - MYSQL_ALLOW_EMPTY_PASSWORD=true
     ports:
-    - 3360:3306
+    - "0.0.0.0::3306"
