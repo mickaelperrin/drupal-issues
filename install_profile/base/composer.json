@@ -1,0 +1,24 @@
+{
+    "name": "mickaelperrin/drupal-profile-base",
+    "description": "Base installation profile for Drupal",
+    "type": "drupal-profile-custom",
+    "license": "Copyrighted",
+    "authors": [
+        {
+            "name": "Mickaël Perrin",
+            "email": "dev@mickaelperrin.fr"
+        }
+    ],
+    "require": {
+      "drupal/admin_toolbar": "1.*",
+      "drupal/masquerade": "2.*",
+      "drupal/coffee": "1.*",
+      "drupal/pathauto": "1.*"
+    },
+    "require-dev": {
+      "drupal/devel": "dev-1.x"
+    },
+    "extra": {
+        "installer-name": "base"
+    }
+}

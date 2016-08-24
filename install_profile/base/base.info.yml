@@ -1,0 +1,51 @@
+name: Base
+type: profile
+description: 'Base install of Drupal'
+version: 0.1
+core: 8.x
+dependencies:
+  # core
+  - automated_cron
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - color
+  - comment
+  - config
+  - contact
+  - contextual
+  - datetime
+  - dblog
+  - dynamic_page_cache
+  - editor
+  - field_ui
+  - file
+  - help
+  - image
+  - menu_link_content
+  - menu_ui
+  - node
+  - options
+  - page_cache
+  - path
+  - quickedit
+  - search
+  - shortcut
+  - taxonomy
+  - toolbar
+  - views
+  - views_ui
+  # contrib
+  #- admin_toolbar
+  #- coffee
+  #- devel #dev
+  #- masquerade
+  #- pathauto
+  #- webprofiler #dev
+  #disabled from standard profile
+  # - history
+  # - rdf
+  # - tour
+themes:
+  - seven
