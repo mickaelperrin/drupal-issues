@@ -37,12 +37,8 @@ dependencies:
   - views
   - views_ui
   # contrib
-  #- admin_toolbar
-  #- coffee
-  #- devel #dev
-  #- masquerade
-  #- pathauto
-  #- webprofiler #dev
+  - devel #dev
+  - webprofiler #dev
   #disabled from standard profile
   # - history
   # - rdf
