@@ -1,4 +1,4 @@
-uuid: 9ff0e90c-fa78-42ad-b606-8aa5e89c34e8
+uuid: 95b0dba9-68ca-485b-b7f9-306c081a08dc
 langcode: fr
 status: true
 dependencies:
@@ -14,7 +14,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Onglets secondaires'
+  label: 'Secondary tabs'
   provider: core
   label_display: '0'
   primary: false

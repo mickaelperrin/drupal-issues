@@ -1,4 +1,4 @@
-uuid: 581056c3-8863-4bb4-9348-d4710c5ae1d1
+uuid: be8cd2e7-9707-4121-b554-3022bc5edea2
 langcode: fr
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: nvrL9bFilzBvm2bjO9rQnFDpBA7dBBUjShSSt6NS-DU
 id: user_cancel_user_action
-label: 'Annuler l''(les) utilisateur(s) sélectionné(s)'
+label: 'Cancel the selected user account(s)'
 type: user
 plugin: user_cancel_user_action
 configuration: {  }

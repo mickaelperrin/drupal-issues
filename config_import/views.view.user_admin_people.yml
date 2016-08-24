@@ -1,4 +1,4 @@
-uuid: e8cd9a78-c1c8-4f6b-a6b2-39bf14222f42
+uuid: 450a8be1-e015-4af8-a26c-abb7be7dd86b
 langcode: fr
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
 _core:
   default_config_hash: queuLjhKGUQ_b-lNh_TkhCvOPrVunfJopvVGOf3cjAo
 id: user_admin_people
-label: Personnes
+label: People
 module: user
-description: 'Trouver et gérer les personnes interagissant avec votre site.'
+description: 'Find and manage people interacting with your site.'
 tag: default
 base_table: users_field_data
 base_field: uid
@@ -18,7 +18,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Maître
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -38,10 +38,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -54,17 +54,17 @@ display:
           total_pages: 0
           tags:
             previous: '‹ Previous'
-            next: 'Suivant ›'
-            first: '« Premier'
-            last: 'Dernier »'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Éléments par page'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Tout -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Décalage
+            offset_label: Offset
           quantity: 9
       style:
         type: table
@@ -149,7 +149,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Mise à jour en masse'
+          label: 'Bulk update'
           exclude: false
           alter:
             alter_text: false
@@ -199,7 +199,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Nom d''utilisateur'
+          label: Username
           exclude: false
           alter:
             alter_text: false
@@ -251,7 +251,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Statut
+          label: Status
           exclude: false
           alter:
             alter_text: false
@@ -307,7 +307,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Rôles
+          label: Roles
           exclude: false
           alter:
             alter_text: false
@@ -358,7 +358,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Membre depuis'
+          label: 'Member for'
           exclude: false
           alter:
             alter_text: false
@@ -414,7 +414,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Dernier accès'
+          label: 'Last access'
           exclude: false
           alter:
             alter_text: false
@@ -470,7 +470,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Actions
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -592,7 +592,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Nom ou courriel contenant'
+            label: 'Name or email contains'
             description: ''
             use_operator: false
             operator: combine_op
@@ -633,7 +633,7 @@ display:
           exposed: true
           expose:
             operator_id: roles_target_id_op
-            label: Rôle
+            label: Role
             description: ''
             use_operator: false
             operator: roles_target_id_op
@@ -673,7 +673,7 @@ display:
           exposed: true
           expose:
             operator_id: permission_op
-            label: Droit
+            label: Permission
             description: ''
             use_operator: false
             operator: permission_op
@@ -727,7 +727,7 @@ display:
               administrator: '0'
           is_grouped: true
           group_info:
-            label: Statut
+            label: Status
             description: ''
             identifier: status
             optional: true
@@ -738,11 +738,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Actif
+                title: Active
                 operator: '='
                 value: '1'
               2:
-                title: Bloqué
+                title: Blocked
                 operator: '='
                 value: '0'
           plugin_id: boolean
@@ -842,7 +842,7 @@ display:
           plugin_id: date
           entity_type: user
           entity_field: created
-      title: Personnes
+      title: People
       empty:
         area_text_custom:
           id: area_text_custom
@@ -853,11 +853,11 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Personne n''est disponible.'
+          content: 'No people available.'
           plugin_id: text_custom
       use_more: false
       use_more_always: false
-      use_more_text: plus
+      use_more_text: more
       display_comment: ''
       use_ajax: false
       hide_attachment_summary: false
@@ -890,15 +890,15 @@ display:
       show_admin_links: false
       menu:
         type: 'default tab'
-        title: Lister
-        description: 'Trouver et gérer les personnes interagissant avec votre site.'
+        title: List
+        description: 'Find and manage people interacting with your site.'
         menu_name: admin
         weight: -10
         context: ''
       tab_options:
         type: normal
-        title: Personnes
-        description: 'Gérer les comptes utilisateurs, les rôles et les droits.'
+        title: People
+        description: 'Manage user accounts, roles, and permissions.'
         menu_name: admin
         weight: 0
       defaults:

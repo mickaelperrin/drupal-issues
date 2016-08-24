@@ -1,4 +1,4 @@
-uuid: 054f3c1b-4834-4fae-85f6-54b64e8d9f33
+uuid: 9d5b9165-860e-46f6-a132-119c90f0bfe6
 langcode: fr
 status: true
 dependencies:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: '-PPKjsNQPvoIDjOuUAvlLocYD976MNjb9Zpgyz5_BWE'
 id: taxonomy_term.full
-label: 'Page d''un terme de taxonomie'
+label: 'Taxonomy term page'
 targetEntityType: taxonomy_term
 cache: true

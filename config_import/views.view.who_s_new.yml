@@ -1,4 +1,4 @@
-uuid: 7dfb56cc-6773-4fdc-b90b-1b9af7b97e14
+uuid: 0f8fc08d-e283-4c4d-bc45-85d4d18a22f7
 langcode: fr
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
 _core:
   default_config_hash: B2M6BoNVm-hHVnH2ILCpbhCZV71T6zLNs8Ag5QH-oNE
 id: who_s_new
-label: 'Nouveaux membres'
+label: 'Who''s new'
 module: user
-description: 'Affiche la liste des utilisateurs les plus récents sur le site.'
+description: 'Shows a list of the newest user accounts on the site.'
 tag: default
 base_table: users_field_data
 base_field: uid
@@ -18,7 +18,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Maître
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -39,10 +39,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Appliquer
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Réinitialiser
-          exposed_sorts_label: 'Trier par'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -160,7 +160,7 @@ display:
           plugin_id: date
           entity_type: user
           entity_field: created
-      title: 'Nouveaux membres'
+      title: 'Who''s new'
       header: {  }
       footer: {  }
       empty: {  }
@@ -177,12 +177,12 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: 'Nouveaux membres'
+    display_title: 'Who''s new'
     position: 1
     display_options:
-      display_description: 'Une liste des nouveaux utilisateurs'
-      block_description: 'Nouveaux membres'
-      block_category: Utilisateur
+      display_description: 'A list of new users'
+      block_description: 'Who''s new'
+      block_category: User
       display_extenders: {  }
     cache_metadata:
       contexts:

@@ -1,10 +1,10 @@
-uuid: 97fa1dca-bab6-47c3-8224-f9bf6c94d1f5
+uuid: 9ae1ff5f-14a4-4fce-89fd-9fab0f774e30
 langcode: fr
 status: true
 dependencies: {  }
 _core:
   default_config_hash: 7klS5IWXrwzVaPpYZFAs6wcx8U2FF1X73OfrtTsvuvE
 id: fallback
-label: 'Format de date de repli'
+label: 'Fallback date format'
 locked: true
 pattern: 'D, m/d/Y - H:i'

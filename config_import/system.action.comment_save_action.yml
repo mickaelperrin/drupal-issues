@@ -1,4 +1,4 @@
-uuid: b1d584e5-1fb7-408a-b0ef-7ee066e22ec1
+uuid: 1c4ff7b9-28f7-4ac3-b241-93bf3283684b
 langcode: fr
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: TSkg_gUZvk-39yXFrIFnKjsxuEzO0qBH82TdDxOMMr4
 id: comment_save_action
-label: 'Enregistrer le commentaire'
+label: 'Save comment'
 type: comment
 plugin: comment_save_action
 configuration: {  }

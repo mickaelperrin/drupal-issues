@@ -1,4 +1,4 @@
-uuid: 81d49c94-5d92-4ae7-867a-df9396cbb0c2
+uuid: 49c20775-7948-405f-bd30-fbb7d1ed9838
 langcode: fr
 status: true
 dependencies:
@@ -16,7 +16,7 @@ provider: null
 plugin: user_login_block
 settings:
   id: user_login_block
-  label: 'Connexion utilisateur'
+  label: 'User login'
   provider: user
   label_display: visible
 visibility: {  }
